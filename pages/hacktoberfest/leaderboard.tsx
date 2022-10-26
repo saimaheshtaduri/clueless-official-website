@@ -122,8 +122,9 @@ const Leaderboard: React.FC = (leaderboardData) => {
                                             src={avatarURL}
                                             className="w-16 rounded-full border-dashed border-2 border-blue-400 text-sm "
                                             alt=""
+                                            onClick={() => window.location.href=`https://github.com/${data.userName}`}
                                         />
-                                        <span className="max-w-[113px] truncate sm:max-w-fit">
+                                        <span onClick={() => window.location.href=`https://github.com/${data.userName}`} className="max-w-[113px] truncate sm:max-w-fit">
                                             {data.userName}
                                         </span>
                                     </td>
